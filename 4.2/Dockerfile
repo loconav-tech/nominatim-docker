@@ -128,6 +128,8 @@ FROM scratch
 
 COPY --from=build / /
 
+COPY ./.httpasswd /etc/apache2/.httpasswd
+
 # Please override this
 ENV NOMINATIM_PASSWORD qaIACxO6wMR3
 # how many threads should be use for importing
